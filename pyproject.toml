@@ -1,4 +1,18 @@
-[project]
-name = "project_name"
-version = "0.0.0"
-dependencies = []
+[tool.poetry]
+name = "nba-gamelog-analysis"
+version = "0.1.0"
+description = "Analysis of the NBA gamelog to determine whether a team will win or not."
+authors = ["Tim <tim@timsexperiments.foo>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+torch = "^2.2.1"
+pandas = "^2.2.0"
+scikit-learn = "^1.4.1.post1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
